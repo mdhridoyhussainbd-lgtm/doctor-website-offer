@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Professional Doctor Website Packages | Web Work Media</title>
+<meta name="description" content="Professional doctor profile websites in Bangladesh from ৳3,999/year. Domain, hosting, mobile design, WhatsApp booking and 3-business-day delivery included.">
+<style>
+:root{
+  --navy:#07384b;--navy2:#052a39;--red:#ef233c;--red2:#d81e34;--ink:#10242f;
+  --muted:#66757f;--line:#e5ecef;--soft:#f7fafb;--pink:#fff4f6;--white:#fff;
+  --green:#14a44d;--shadow:0 18px 50px rgba(5,46,63,.11);--radius:22px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}img{max-width:100%;display:block}
+.container{width:min(1180px,calc(100% - 34px));margin:auto}
+.btn{border:0;cursor:pointer;border-radius:13px;padding:15px 22px;font-weight:850;display:inline-flex;align-items:center;justify-content:center;gap:9px;transition:.2s ease}
+.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--red);color:#fff;box-shadow:0 12px 28px rgba(239,35,60,.22)}
+.btn-outline{background:#fff;color:var(--navy);border:1px solid #dbe5e9}
+.red{color:var(--red)}.muted{color:var(--muted)}
+header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(7,56,75,.08)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.logo img{width:172px;height:auto}
+.navlinks{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:750}
+.navlinks a:hover{color:var(--red)}.nav-cta{padding:12px 18px;border-radius:999px;background:var(--red);color:#fff;font-weight:850}
+.hero{padding:62px 0 34px;background:
+ radial-gradient(circle at 82% 15%,rgba(239,35,60,.07),transparent 25%),
+ linear-gradient(180deg,#fff 0%,#fbfdfe 100%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid #ffd7dd;background:#fff4f6;border-radius:999px;color:var(--red);font-size:13px;font-weight:850}
+h1{font-size:clamp(44px,6vw,76px);line-height:.98;letter-spacing:-.055em;margin:18px 0 18px;max-width:760px}
+.hero .lead{font-size:18px;color:var(--muted);max-width:670px;margin:0 0 26px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.micro{display:flex;gap:18px;flex-wrap:wrap;margin-top:23px;color:#4f616c;font-size:13px;font-weight:700}
+.micro span{display:flex;align-items:center;gap:7px}.tick{width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:#edf7f2;color:var(--green);font-weight:900}
+.hero-card{background:#fff;border:1px solid #e5edef;border-radius:30px;padding:18px;box-shadow:var(--shadow);position:relative}
+.doctor-showcase{min-height:420px;border-radius:24px;background:linear-gradient(145deg,#eff7f9,#fff);position:relative;overflow:hidden}
+.doctor-bg{position:absolute;inset:0;background:
+ linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.88) 43%,rgba(255,255,255,.15) 70%),
+ radial-gradient(circle at 78% 32%,#dbeef3 0 22%,transparent 23%);}
+.ecg{position:absolute;left:8%;top:22%;width:50%;opacity:.18}
+.doctor-figure{position:absolute;right:4%;bottom:0;width:44%;height:87%;border-radius:110px 110px 20px 20px;background:linear-gradient(180deg,#f1f5f6,#fff);display:grid;place-items:center;font-size:170px;filter:drop-shadow(0 18px 18px rgba(7,56,75,.14))}
+.mock-copy{position:absolute;left:7%;top:14%;max-width:300px}
+.mock-copy .mini-title{font-size:29px;font-weight:950;line-height:1.05;margin-bottom:10px}
+.mock-copy p{font-size:13px;color:#65747d;margin:0 0 15px}
+.mock-btn{display:inline-block;background:var(--navy);color:#fff;padding:10px 14px;border-radius:9px;font-size:12px;font-weight:850}
+.proof-badge{position:absolute;left:6%;bottom:7%;right:6%;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.proof-badge div{background:#fff;border:1px solid #e3ebee;border-radius:13px;padding:10px;text-align:center;font-size:11px;color:var(--muted);box-shadow:0 8px 22px rgba(5,46,63,.08)}
+.proof-badge strong{display:block;color:var(--ink);font-size:13px}
+.trust-strip{margin-top:18px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 30px rgba(5,46,63,.07);border-radius:16px;padding:15px}
+.trust-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.trust-item{text-align:center;font-size:12px;color:var(--muted);font-weight:700}.trust-item strong{display:block;color:var(--navy);font-size:13px;margin-top:3px}
+.section{padding:68px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 34px}
+.section-head h2{font-size:clamp(34px,4vw,50px);line-height:1.05;letter-spacing:-.035em;margin:10px 0}
+.section-head p{margin:0;color:var(--muted)}
+.problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.problem{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 9px 28px rgba(5,46,63,.05)}
+.problem-icon{width:44px;height:44px;border-radius:13px;background:var(--pink);color:var(--red);display:grid;place-items:center;font-size:21px;margin-bottom:13px}
+.problem h3{margin:0 0 6px;font-size:18px}.problem p{margin:0;color:var(--muted);font-size:14px}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.plan{background:#fff;border:1px solid #e2eaee;border-radius:24px;padding:26px;box-shadow:0 10px 32px rgba(6,56,75,.07);display:flex;flex-direction:column;position:relative}
+.plan.featured{border:2px solid var(--red);transform:translateY(-8px);box-shadow:0 20px 44px rgba(239,35,60,.12)}
+.badge{position:absolute;top:0;left:50%;transform:translate(-50%,-50%);background:var(--red);color:#fff;border-radius:999px;padding:7px 15px;font-size:11px;font-weight:900;letter-spacing:.05em;text-transform:uppercase}
+.plan-top{display:flex;justify-content:space-between;align-items:center;gap:10px}.plan h3{font-size:24px;margin:0}
+.plan-tag{font-size:12px;background:#edf5f8;color:var(--navy);padding:6px 10px;border-radius:999px;font-weight:850}
+.tagline{font-size:14px;color:var(--muted);margin:7px 0 18px}
+.price{font-size:46px;line-height:1;font-weight:950;color:var(--red);letter-spacing:-.04em}.price small{font-size:15px;color:var(--ink);font-weight:700;letter-spacing:0}
+.features{list-style:none;margin:22px 0 24px;padding:0;display:grid;gap:10px;flex:1}
+.features li{display:flex;gap:10px;align-items:flex-start;font-size:14px}.check{width:20px;height:20px;min-width:20px;border-radius:50%;background:#fff0f2;color:var(--red);display:grid;place-items:center;font-size:12px;font-weight:1000}
+.delivery{background:var(--navy);color:#fff;border-radius:12px;padding:11px 12px;text-align:center;font-size:13px;font-weight:800;margin-bottom:12px}.featured .delivery{background:var(--red)}
+.select-btn{width:100%;background:#fff;border:1.5px solid var(--navy);color:var(--navy)}.featured .select-btn{background:var(--red);border-color:var(--red);color:#fff}
+.value-bar{margin-top:22px;background:#f8fbfc;border:1px solid var(--line);border-radius:16px;padding:16px;text-align:center;color:#42545e;font-size:14px}.value-bar b{color:var(--navy)}
+.process{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.step{background:#fff;border:1px solid var(--line);border-radius:19px;padding:22px;box-shadow:0 9px 26px rgba(5,46,63,.05)}
+.step-no{width:40px;height:40px;border-radius:12px;background:var(--pink);color:var(--red);display:grid;place-items:center;font-weight:950;margin-bottom:12px}
+.step h4{margin:0 0 5px;font-size:18px}.step p{margin:0;color:var(--muted);font-size:14px}
+.demo-wrap{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.device{background:#fff;border:1px solid var(--line);border-radius:25px;padding:18px;box-shadow:var(--shadow)}
+.browser{border-radius:16px;background:#f5f8f9;overflow:hidden;border:1px solid #e3eaed}.bar{height:34px;background:#fff;border-bottom:1px solid #e4eaed;display:flex;gap:6px;align-items:center;padding:0 12px}.bar i{width:7px;height:7px;border-radius:50%;background:#d5dde1}
+.site-mini{padding:24px;background:linear-gradient(135deg,#fff,#eef7f9);min-height:280px;position:relative}.site-mini h3{font-size:26px;line-height:1.08;margin:0 0 8px;max-width:55%}.site-mini p{color:#70808a;font-size:12px;max-width:48%}.site-mini .doc{position:absolute;right:8%;bottom:0;font-size:120px}
+.benefits{display:grid;gap:12px;margin-top:20px}.benefit{display:flex;gap:12px;align-items:flex-start}.benefit .icon{width:34px;height:34px;border-radius:10px;background:#eef6f8;display:grid;place-items:center;color:var(--navy);font-weight:900}
+.benefit b{display:block}.benefit span{color:var(--muted);font-size:13px}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}.faq{border:1px solid var(--line);border-radius:11px;background:#fff;overflow:hidden}
+.faq button{width:100%;border:0;background:#fff;padding:16px 17px;text-align:left;font-weight:800;display:flex;justify-content:space-between;cursor:pointer}.faq-content{display:none;padding:0 17px 16px;color:var(--muted);font-size:14px}
+.cta{background:linear-gradient(120deg,var(--navy2),#07506a);color:#fff;border-radius:26px;padding:32px 34px;display:flex;justify-content:space-between;align-items:center;gap:24px;box-shadow:var(--shadow)}
+.cta h3{font-size:30px;margin:0 0 6px}.cta p{margin:0;opacity:.78}
+footer{background:var(--navy2);color:#fff;margin-top:70px;padding:44px 0 20px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:34px}footer p,footer a{font-size:13px;color:#cfe0e7;display:block;margin:7px 0}.footer-logo{width:190px;background:#fff;border-radius:12px;padding:9px;margin-bottom:14px}.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:28px;padding-top:16px;text-align:center;color:#9fb8c3;font-size:12px}
+.sticky-mobile{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;background:#fff;border:1px solid #e0e8eb;border-radius:16px;box-shadow:0 16px 40px rgba(5,46,63,.18);padding:9px;gap:8px}
+.sticky-mobile .btn{flex:1;padding:12px 10px;font-size:13px}
+.modal{position:fixed;inset:0;background:rgba(2,22,31,.67);backdrop-filter:blur(7px);z-index:100;display:none;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}
+.modal-card{width:min(760px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:26px;box-shadow:0 28px 70px rgba(0,0,0,.28)}.modal-head{padding:23px 25px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#fff;z-index:2}.modal-head h3{margin:0;font-size:25px}.close{width:38px;height:38px;border-radius:11px;border:1px solid #e1e8eb;background:#fff;cursor:pointer;font-size:20px}
+.modal-body{padding:24px 25px 28px}.selected{display:flex;justify-content:space-between;align-items:center;gap:18px;background:#f6fafb;border:1px solid #e2ecef;border-radius:17px;padding:16px;margin-bottom:18px}.selected strong{display:block;font-size:18px}.selected .amount{font-size:28px;color:var(--red);font-weight:950}
+.bkash-box{border:1.5px solid #f5b3c1;background:#fff7f9;border-radius:18px;padding:18px;margin-bottom:20px}.bkash-title{font-size:18px;font-weight:950;color:#d3135a}.bkash-number{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#fff;border:1px solid #f4cfda;border-radius:14px;padding:13px 14px;margin:13px 0}.bkash-number code{font-size:20px;font-weight:900;color:#b80f55}.copy-btn{border:0;background:#e2136e;color:#fff;border-radius:10px;padding:9px 12px;font-weight:850;cursor:pointer}
+.bkash-steps{margin:0;padding-left:20px;color:#59666e;font-size:14px}.bkash-steps li{margin:7px 0}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:850;color:#41505a}.field input{height:48px;border:1px solid #d9e3e7;border-radius:12px;padding:0 13px;outline:none}.field input:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(239,35,60,.08)}.note{font-size:12px;color:#7b8991;margin:12px 0 0}.submit{width:100%;margin-top:17px;background:var(--red);color:#fff;font-size:16px}
+.success{display:none;text-align:center;padding:18px 8px 4px}.success.show{display:block}.success-icon{width:64px;height:64px;border-radius:50%;background:#eaf9ef;color:var(--green);display:grid;place-items:center;margin:0 auto 12px;font-size:30px;font-weight:1000}.success h4{font-size:24px;margin:0 0 8px}.success p{color:var(--muted);margin:0 0 15px}
+@media(max-width:900px){.navlinks{display:none}.hero-grid,.demo-wrap,.pricing{grid-template-columns:1fr}.hero{padding-top:45px}.plan.featured{transform:none}.problem-grid,.process{grid-template-columns:1fr}.trust-grid{grid-template-columns:repeat(3,1fr)}.pricing{max-width:650px;margin:auto}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.nav{height:68px}.logo img{width:150px}.nav-cta{font-size:12px;padding:10px 12px}h1{font-size:44px}.hero{padding:38px 0 28px}.doctor-showcase{min-height:330px}.doctor-figure{font-size:125px;width:48%;height:78%}.mock-copy{left:6%;top:10%;max-width:220px}.mock-copy .mini-title{font-size:24px}.proof-badge{grid-template-columns:1fr 1fr 1fr;left:4%;right:4%}.trust-grid{grid-template-columns:1fr 1fr}.section{padding:50px 0}.faq-grid{grid-template-columns:1fr}.cta{flex-direction:column;align-items:flex-start;padding:26px}.footer-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.selected,.bkash-number{flex-direction:column;align-items:flex-start}.sticky-mobile{display:flex}body{padding-bottom:82px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="logo" aria-label="Web Work Media home"><img src="data:image/png;base64,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" alt="Web Work Media logo"></a>
+    <nav class="navlinks">
+      <a href="#packages">Packages</a>
+      <a href="#why">Why You Need It</a>
+      <a href="#how">How It Works</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="nav-cta" href="#packages">Get My Website</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">🇧🇩 Made for doctors in Bangladesh</span>
+        <h1>Your Professional <span class="red">Doctor Website</span> — Ready in 3 Business Days</h1>
+        <p class="lead">Build trust before the patient even reaches your chamber. Get a clean, mobile-friendly doctor profile website with domain, hosting, chamber details, Google Maps and WhatsApp appointment access included.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#packages">Choose Your Package →</a>
+          <a class="btn btn-outline" href="https://wa.me/8801302778420?text=Hello%20Web%20Work%20Media%2C%20I%27m%20interested%20in%20a%20doctor%20website." target="_blank" rel="noopener">Ask on WhatsApp</a>
+        </div>
+        <div class="micro">
+          <span><i class="tick">✓</i> Starts from ৳3,999/year</span>
+          <span><i class="tick">✓</i> Domain + hosting included</span>
+          <span><i class="tick">✓</i> No technical knowledge needed</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="doctor-showcase">
+          <div class="doctor-bg"></div>
+          <svg class="ecg" viewBox="0 0 350 80" aria-hidden="true"><polyline points="0,42 55,42 72,20 88,63 105,10 122,70 142,42 176,42 195,28 214,57 234,42 350,42" fill="none" stroke="#ef233c" stroke-width="5"/></svg>
+          <div class="mock-copy">
+            <div class="mini-title">A Professional Online Presence Patients Can Trust</div>
+            <p>Your qualifications, specialty, chamber details and appointment information — all in one place.</p>
+            <span class="mock-btn">BOOK APPOINTMENT</span>
+          </div>
+          <div class="doctor-figure">👨‍⚕️</div>
+          <div class="proof-badge">
+            <div><strong>3 Days</strong>Fast Delivery</div>
+            <div><strong>Mobile</strong>Patient Friendly</div>
+            <div><strong>1 Year</strong>Support Included</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust-strip">
+      <div class="trust-grid">
+        <div class="trust-item">🌐<strong>.com Domain</strong>Included</div>
+        <div class="trust-item">🗄️<strong>Hosting</strong>Included</div>
+        <div class="trust-item">💬<strong>WhatsApp</strong>Appointment</div>
+        <div class="trust-item">📍<strong>Google Maps</strong>Chamber Location</div>
+        <div class="trust-item">📱<strong>Mobile</strong>Responsive</div>
+        <div class="trust-item">🔎<strong>SEO</strong>Basic Setup</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="why" style="background:#fbfdfe">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Why doctors choose a professional website</span>
+      <h2>Make it easier for patients to <span class="red">find, trust and contact you</span></h2>
+      <p>Your website should answer the questions patients usually ask before booking an appointment.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem"><div class="problem-icon">🔎</div><h3>Be easier to find online</h3><p>Give patients one clear place to see your specialty, qualifications, chamber and contact information.</p></div>
+      <div class="problem"><div class="problem-icon">🩺</div><h3>Build professional credibility</h3><p>Present your professional profile in a clean format instead of depending only on social media pages or listings.</p></div>
+      <div class="problem"><div class="problem-icon">💬</div><h3>Make appointments easier</h3><p>Let patients contact your chamber by phone or WhatsApp without searching through multiple pages.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="packages">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Simple annual pricing</span>
+      <h2>Choose the package that fits your <span class="red">practice</span></h2>
+      <p>Pay once for the year. We handle the setup, domain, hosting and launch.</p>
+    </div>
+
+    <div class="pricing">
+      <article class="plan">
+        <div class="plan-top"><h3>Basic</h3><span class="plan-tag">Essential Profile</span></div>
+        <p class="tagline">Best for a simple professional doctor profile.</p>
+        <div class="price">৳3,999 <small>/ Year</small></div>
+        <ul class="features">
+          <li><span class="check">✓</span>One Page Doctor Profile Website</li>
+          <li><span class="check">✓</span>.com Domain</li>
+          <li><span class="check">✓</span>Web Hosting</li>
+          <li><span class="check">✓</span>Mobile Responsive Design</li>
+          <li><span class="check">✓</span>Chamber Information</li>
+          <li><span class="check">✓</span>WhatsApp Appointment Button</li>
+          <li><span class="check">✓</span>Google Maps Integration</li>
+          <li><span class="check">✓</span>Basic SEO Setup</li>
+          <li><span class="check">✓</span>1 Year Support</li>
+        </ul>
+        <div class="delivery">◷ Delivery within 3 business days</div>
+        <button class="btn select-btn" data-plan="Basic" data-price="3999">Choose Basic</button>
+      </article>
+
+      <article class="plan featured">
+        <div class="badge">Most Popular</div>
+        <div class="plan-top"><h3>Professional</h3><span class="plan-tag">Best Value</span></div>
+        <p class="tagline">For doctors who want a stronger online presence.</p>
+        <div class="price">৳6,999 <small>/ Year</small></div>
+        <ul class="features">
+          <li><span class="check">✓</span>Everything in BASIC</li>
+          <li><span class="check">✓</span>Up to 5 Pages</li>
+          <li><span class="check">✓</span>Appointment / Contact Form</li>
+          <li><span class="check">✓</span>Multiple Chamber Locations</li>
+          <li><span class="check">✓</span>Social Media Integration</li>
+          <li><span class="check">✓</span>Services / Treatment Section</li>
+          <li><span class="check">✓</span>On-Page SEO</li>
+          <li><span class="check">✓</span>2 Content Updates / Year</li>
+          <li><span class="check">✓</span>Priority Support</li>
+        </ul>
+        <div class="delivery">◷ Delivery within 3 business days</div>
+        <button class="btn select-btn" data-plan="Professional" data-price="6999">Choose Professional</button>
+      </article>
+
+      <article class="plan">
+        <div class="plan-top"><h3>Premium</h3><span class="plan-tag">Full Presence</span></div>
+        <p class="tagline">For doctors who want more content and visibility.</p>
+        <div class="price">৳9,999 <small>/ Year</small></div>
+        <ul class="features">
+          <li><span class="check">✓</span>Everything in PROFESSIONAL</li>
+          <li><span class="check">✓</span>Unlimited Pages</li>
+          <li><span class="check">✓</span>Blog / News Section</li>
+          <li><span class="check">✓</span>Advanced SEO Setup</li>
+          <li><span class="check">✓</span>Speed Optimization</li>
+          <li><span class="check">✓</span>Gallery Section</li>
+          <li><span class="check">✓</span>Bangla + English</li>
+          <li><span class="check">✓</span>4 Content Updates / Year</li>
+          <li><span class="check">✓</span>Priority Support</li>
+        </ul>
+        <div class="delivery">◷ Delivery within 3 business days</div>
+        <button class="btn select-btn" data-plan="Premium" data-price="9999">Choose Premium</button>
+      </article>
+    </div>
+    <div class="value-bar"><b>No hidden setup fee.</b> Domain + hosting are included for the package period shown.</div>
+  </div>
+</section>
+
+<section class="section" id="how" style="background:#fbfdfe">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Simple 3-step process</span>
+      <h2>From package selection to launch — <span class="red">without the hassle</span></h2>
+    </div>
+    <div class="process">
+      <div class="step"><div class="step-no">1</div><h4>Choose your package</h4><p>Select Basic, Professional or Premium based on the online presence you want.</p></div>
+      <div class="step"><div class="step-no">2</div><h4>Pay by bKash Send Money</h4><p>Send the exact package amount to our bKash number and keep your Transaction ID.</p></div>
+      <div class="step"><div class="step-no">3</div><h4>Send your doctor information</h4><p>We collect your profile, qualifications, chamber details and photos, then build and launch your website.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container demo-wrap">
+    <div class="device">
+      <div class="browser">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="site-mini">
+          <h3>Dr. Farhan Ahmed <span class="red">Cardiologist</span></h3>
+          <p>Professional profile, chamber details, services, location and appointment access.</p>
+          <a class="btn btn-primary" href="#packages" style="font-size:11px;padding:10px 12px">Book Appointment</a>
+          <div class="doc">👨‍⚕️</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow">Designed around patient needs</span>
+      <h2 style="font-size:40px;line-height:1.05;letter-spacing:-.035em;margin:14px 0">A doctor website that is <span class="red">clear, credible and easy to use</span></h2>
+      <p class="muted">We focus on the information patients actually need instead of filling the website with unnecessary sections.</p>
+      <div class="benefits">
+        <div class="benefit"><div class="icon">✓</div><div><b>Professional doctor profile</b><span>Name, credentials, specialty and professional information presented clearly.</span></div></div>
+        <div class="benefit"><div class="icon">✓</div><div><b>Chamber and visiting information</b><span>Make your address, schedule and location easier for patients to access.</span></div></div>
+        <div class="benefit"><div class="icon">✓</div><div><b>Fast patient contact</b><span>WhatsApp and call buttons can reduce friction when someone wants an appointment.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Before you order</span>
+      <h2>Frequently asked <span class="red">questions</span></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq"><button type="button">Is domain and hosting included?<span>+</span></button><div class="faq-content">Yes. Domain and hosting are included for the package period shown.</div></div>
+      <div class="faq"><button type="button">How fast will the website be ready?<span>+</span></button><div class="faq-content">Our standard target is within 3 business days after receiving your payment and all required content.</div></div>
+      <div class="faq"><button type="button">How do I pay?<span>+</span></button><div class="faq-content">Choose a package and pay the exact amount using bKash Send Money. Then submit your Transaction ID through the checkout form.</div></div>
+      <div class="faq"><button type="button">Can I use WhatsApp for appointments?<span>+</span></button><div class="faq-content">Yes. WhatsApp appointment/contact access is included in the Basic package and above.</div></div>
+      <div class="faq"><button type="button">Can I add another chamber later?<span>+</span></button><div class="faq-content">Yes. Multiple chamber locations are included in the Professional and Premium packages, and upgrades can be discussed later.</div></div>
+      <div class="faq"><button type="button">Do I need to know anything technical?<span>+</span></button><div class="faq-content">No. You provide the doctor information and content; we handle the website setup and launch.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="cta">
+    <div><h3>Ready to build your professional doctor profile?</h3><p>Choose a package now and complete your order by bKash.</p></div>
+    <a class="btn btn-primary" href="#packages">Choose My Package →</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><img class="footer-logo" src="data:image/png;base64,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" alt="Web Work Media logo"><p>Professional, patient-friendly websites designed for doctors across Bangladesh.</p></div>
+      <div><h4>Quick Links</h4><a href="#packages">Packages</a><a href="#why">Why You Need It</a><a href="#how">How It Works</a><a href="#faq">FAQ</a></div>
+      <div><h4>Contact</h4><p>📞 +8801302778420</p><p>🌐 webworkmedia.net</p><p>💬 WhatsApp available</p></div>
+    </div>
+    <div class="copy">© 2026 Web Work Media. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<div class="sticky-mobile">
+  <a class="btn btn-outline" href="https://wa.me/8801302778420?text=Hello%20Web%20Work%20Media%2C%20I%27m%20interested%20in%20a%20doctor%20website." target="_blank">WhatsApp</a>
+  <a class="btn btn-primary" href="#packages">View Packages</a>
+</div>
+
+<div class="modal" id="checkoutModal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <div class="modal-head">
+      <div><div style="font-size:12px;color:#7b8991;font-weight:800;text-transform:uppercase;letter-spacing:.08em">Complete your order</div><h3 id="checkoutTitle">Pay by bKash</h3></div>
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+    </div>
+    <div class="modal-body">
+      <div id="checkoutFormWrap">
+        <div class="selected"><div><small style="color:#71808a">Selected package</small><strong id="selectedPlan">Basic Package</strong></div><div class="amount" id="selectedAmount">৳3,999</div></div>
+        <div class="bkash-box">
+          <div class="bkash-title">Pay with bKash Send Money</div>
+          <div class="bkash-number"><div><small style="display:block;color:#7a6870">Send Money to</small><code id="bkashNumber">01302778420</code></div><button class="copy-btn" id="copyBkash" type="button">Copy Number</button></div>
+          <ol class="bkash-steps">
+            <li>Open the bKash app and choose <strong>Send Money</strong>.</li>
+            <li>Send the exact amount shown above to <strong>01302778420</strong>.</li>
+            <li>Copy the <strong>Transaction ID (TrxID)</strong>.</li>
+            <li>Fill in the details below and submit your order.</li>
+          </ol>
+        </div>
+        <form id="orderForm">
+          <div class="form-grid">
+            <div class="field"><label for="name">Your Name *</label><input id="name" required placeholder="Your full name"></div>
+            <div class="field"><label for="phone">Phone Number *</label><input id="phone" required inputmode="tel" placeholder="01XXXXXXXXX"></div>
+            <div class="field"><label for="doctor">Doctor Name *</label><input id="doctor" required placeholder="Doctor's full name"></div>
+            <div class="field"><label for="specialty">Specialty *</label><input id="specialty" required placeholder="e.g. Cardiology"></div>
+            <div class="field"><label for="trxid">bKash TrxID *</label><input id="trxid" required placeholder="e.g. C8N7ABC123"></div>
+            <div class="field"><label for="chamber">Chamber / City *</label><input id="chamber" required placeholder="Chamber name or city"></div>
+          </div>
+          <p class="note">Payment verification is manual. After you submit, WhatsApp will open with your package and order details so our team can verify your TrxID.</p>
+          <button class="btn submit" type="submit">Submit Order via WhatsApp →</button>
+        </form>
+      </div>
+      <div class="success" id="successBox"><div class="success-icon">✓</div><h4>Order details prepared</h4><p>WhatsApp should open with your order information. Send the message to complete your order.</p><button class="btn btn-outline" id="doneBtn">Done</button></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const SETTINGS={bkashNumberDisplay:'01302778420',bkashNumberPlain:'01302778420',whatsappNumber:'8801302778420'};
+const modal=document.getElementById('checkoutModal'),closeModal=document.getElementById('closeModal'),selectedPlan=document.getElementById('selectedPlan'),selectedAmount=document.getElementById('selectedAmount'),bkashNumber=document.getElementById('bkashNumber'),copyBkash=document.getElementById('copyBkash'),orderForm=document.getElementById('orderForm'),checkoutFormWrap=document.getElementById('checkoutFormWrap'),successBox=document.getElementById('successBox'),doneBtn=document.getElementById('doneBtn');
+let activePlan={name:'Basic',price:3999};bkashNumber.textContent=SETTINGS.bkashNumberDisplay;
+const money=n=>'৳'+Number(n).toLocaleString('en-US');
+document.querySelectorAll('[data-plan]').forEach(btn=>btn.addEventListener('click',()=>{activePlan={name:btn.dataset.plan,price:Number(btn.dataset.price)};selectedPlan.textContent=activePlan.name+' Package';selectedAmount.textContent=money(activePlan.price);checkoutFormWrap.style.display='block';successBox.classList.remove('show');modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}));
+function hideModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+closeModal.addEventListener('click',hideModal);doneBtn.addEventListener('click',hideModal);modal.addEventListener('click',e=>{if(e.target===modal)hideModal();});document.addEventListener('keydown',e=>{if(e.key==='Escape')hideModal();});
+copyBkash.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(SETTINGS.bkashNumberPlain);copyBkash.textContent='Copied!';setTimeout(()=>copyBkash.textContent='Copy Number',1400);}catch(e){prompt('Copy this bKash number:',SETTINGS.bkashNumberPlain);}});
+document.querySelectorAll('.faq button').forEach(btn=>btn.addEventListener('click',()=>{const c=btn.nextElementSibling,open=c.style.display==='block';c.style.display=open?'none':'block';btn.querySelector('span').textContent=open?'+':'−';}));
+orderForm.addEventListener('submit',e=>{e.preventDefault();if(!orderForm.reportValidity())return;
+const name=document.getElementById('name').value.trim(),phone=document.getElementById('phone').value.trim(),doctor=document.getElementById('doctor').value.trim(),specialty=document.getElementById('specialty').value.trim(),trxid=document.getElementById('trxid').value.trim(),chamber=document.getElementById('chamber').value.trim();
+const message=['Hello Web Work Media, I have completed payment for a Doctor Website Package.','',`Package: ${activePlan.name}`,`Amount: ${money(activePlan.price)}`,`Payment Method: bKash Send Money`,`bKash TrxID: ${trxid}`,'',`Customer Name: ${name}`,`Phone: ${phone}`,`Doctor Name: ${doctor}`,`Specialty: ${specialty}`,`Chamber / City: ${chamber}`,'','Please verify my payment and confirm the next steps.'].join('\n');
+window.open(`https://wa.me/${SETTINGS.whatsappNumber}?text=${encodeURIComponent(message)}`,'_blank','noopener');checkoutFormWrap.style.display='none';successBox.classList.add('show');});
+</script>
+</body>
+</html>
