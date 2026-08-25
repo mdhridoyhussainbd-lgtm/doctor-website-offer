@@ -1,7 +1,7 @@
 (function () {
   const BKASH_NUMBER = '01751210179';
-  const WHATSAPP_DISPLAY = '0130277840';
-  const WHATSAPP_NUMBER = '880130277840';
+  const WHATSAPP_DISPLAY = '01302778420';
+  const WHATSAPP_NUMBER = '8801302778420';
 
   const body = document.body;
   const orderModal = document.getElementById('orderModal');

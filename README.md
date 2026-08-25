@@ -4,7 +4,7 @@ Static HTML/CSS/JS landing page for doctor website packages.
 
 ## Contact & payment
 - bKash Send Money: `01751210179`
-- WhatsApp/contact supplied for this build: `0130277840`
+- WhatsApp/contact supplied for this build: `01302778420`
 
 ## GitHub file structure
 Keep these files in the repository root:
