@@ -1,43 +1,25 @@
-# Web Work Media — Doctor Website Landing Page
+# Web Work Media — Doctor Website Offer
 
-Ready-to-upload static landing page rebuilt from the supplied Web Work Media design reference.
+Static HTML/CSS/JS landing page for doctor website packages.
 
-## Included
-- Responsive desktop/tablet/mobile layout
-- High-resolution Web Work Media logo asset
-- Complete hero website mockup (not a cropped screenshot)
-- Basic / Professional / Premium package cards
-- bKash manual payment modal
-- Transaction ID + customer details submission to WhatsApp
-- FAQ, benefits, process, CTA and footer
-- No external JavaScript libraries
+## Contact & payment
+- bKash Send Money: `01751210179`
+- WhatsApp/contact supplied for this build: `0130277840`
 
-## bKash number
-Current configured number: `01751210179`
+## GitHub file structure
+Keep these files in the repository root:
 
-To change it, open `script.js` and edit:
-```js
-const SITE_CONFIG = {
-  bkashNumber: '01751210179',
-  whatsappNumber: '8801751210179'
-};
-```
-Also update any visible text / tel / WhatsApp links in `index.html` if the contact number changes.
+- `index.html`
+- `styles.css`
+- `script.js`
+- `assets/`
 
-## Deploy to GitHub / Hostinger
-Upload all files and the `assets` folder to your repository root. Your root should look like:
+If your repository already has a `CNAME` file for the Hostinger subdomain/custom domain, keep it unchanged.
 
-- index.html
-- styles.css
-- script.js
-- README.md
-- assets/
-  - webwork-media-logo.png
-  - favicon.png
+## Order form
+The package button opens a 3-step order form:
+1. bKash payment details
+2. Doctor profile information
+3. Up to 3 chambers + exactly 3 doctor photos
 
-If Hostinger is pulling from GitHub, deploy/pull the latest commit after uploading.
-
-## Important: automatic bKash checkout
-This version uses **manual bKash Send Money + Transaction ID verification** and is safe for a static HTML deployment.
-
-A real automatic bKash Merchant Checkout cannot be securely implemented only in browser JavaScript. It requires valid bKash merchant API credentials and a server-side backend (for example PHP/Node) to keep the secret credentials private and verify payments.
+On compatible mobile browsers, the Web Share API can pass the selected photos and order text to the device share sheet. The customer then chooses WhatsApp. Browsers do not allow a normal `wa.me` link to pre-attach local files. When file sharing is unavailable, the form opens WhatsApp with the completed order text and asks the customer to attach the same 3 photos manually.

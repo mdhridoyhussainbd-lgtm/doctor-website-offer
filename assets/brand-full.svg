@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190" role="img" aria-labelledby="title desc">
+  <title id="title">Web Work Media</title>
+  <desc id="desc">Web Work Media - Designing with Intention</desc>
+  <g transform="translate(8 14)">
+    <path d="M52 38 L92 2 L132 38 L116 54 L92 31 L68 54 Z" fill="#ef233c"/>
+    <path d="M18 72 L47 101 L75 73 L103 101 L132 72 L148 88 L104 132 L75 104 L47 132 L2 88 Z" fill="#102d3b"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="54" letter-spacing="-1.2">
+    <text x="180" y="91" fill="#ef233c">WEB</text>
+    <text x="300" y="91" fill="#102d3b">WORK</text>
+    <text x="459" y="91" fill="#ef233c">MEDIA</text>
+  </g>
+  <text x="182" y="133" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="8" fill="#536977">DESIGNING WITH INTENTION</text>
+</svg>
