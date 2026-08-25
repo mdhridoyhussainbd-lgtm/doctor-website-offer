@@ -9,9 +9,6 @@
   const selectedPackage = document.getElementById('selectedPackage');
   const selectedAmount = document.getElementById('selectedAmount');
   const copyBkash = document.getElementById('copyBkash');
-  const photoInput = document.getElementById('doctorPhotos');
-  const photoPreviews = document.getElementById('photoPreviews');
-  const photoCount = document.getElementById('photoCount');
   const toast = document.getElementById('toast');
   const menuToggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav');
@@ -22,7 +19,6 @@
   const slider = document.querySelector('[data-slider]');
   let currentSlide = 0;
   let slideTimer = null;
-  let selectedPhotos = [];
   let currentStep = 1;
 
   function showToast(message) {
@@ -139,34 +135,6 @@
     if (target < currentStep || validateStep(currentStep)) setStep(target);
   }));
 
-  function renderPhotos() {
-    photoPreviews.innerHTML = '';
-    selectedPhotos.forEach((file, index) => {
-      const wrapper = document.createElement('div');
-      wrapper.className = 'photo-preview';
-      const image = document.createElement('img');
-      image.alt = `Doctor photo ${index + 1}`;
-      const url = URL.createObjectURL(file);
-      image.src = url;
-      image.onload = () => URL.revokeObjectURL(url);
-      const label = document.createElement('span');
-      label.textContent = `Photo ${index + 1}`;
-      wrapper.append(image, label);
-      photoPreviews.appendChild(wrapper);
-    });
-    photoCount.textContent = selectedPhotos.length === 3 ? '3 photos selected ✓' : `${selectedPhotos.length} of 3 photos selected`;
-  }
-
-  photoInput?.addEventListener('change', () => {
-    const images = [...photoInput.files].filter(file => file.type.startsWith('image/'));
-    if (images.length > 3) {
-      selectedPhotos = images.slice(0, 3);
-      showToast('Only the first 3 photos were selected.');
-    } else {
-      selectedPhotos = images;
-    }
-    renderPhotos();
-  });
 
   function value(id) {
     return document.getElementById(id)?.value.trim() || '';
@@ -217,45 +185,19 @@
       ...linesForChamber(2),
       ...linesForChamber(3),
       '',
-      '*PHOTOS*',
-      '3 doctor photos selected. Please find the 3 photos attached with this order / I will attach them in WhatsApp.',
-      '',
       `WhatsApp contact: ${WHATSAPP_DISPLAY}`
     ].join('\n');
   }
 
-  async function shareOrder(message) {
-    if (selectedPhotos.length === 3 && navigator.share && navigator.canShare) {
-      try {
-        const shareData = { title: 'Doctor Website Order', text: message, files: selectedPhotos };
-        if (navigator.canShare(shareData)) {
-          await navigator.share(shareData);
-          showToast('Choose WhatsApp from the share sheet to send the order.');
-          return true;
-        }
-      } catch (error) {
-        if (error?.name === 'AbortError') return false;
-      }
-    }
-    return false;
-  }
 
   orderForm?.addEventListener('submit', async e => {
     e.preventDefault();
     if (!validateStep(3)) return;
-    if (selectedPhotos.length !== 3) {
-      photoInput?.focus();
-      showToast('Please select exactly 3 doctor photos.');
-      return;
-    }
 
     const message = buildOrderMessage();
-    const shared = await shareOrder(message);
-    if (!shared) {
-      try { await navigator.clipboard.writeText(message); } catch (_) {}
-      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
-      showToast('WhatsApp opened. Please attach the same 3 selected photos manually.');
-    }
+    try { await navigator.clipboard.writeText(message); } catch (_) {}
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+    showToast('WhatsApp opened with the completed order details.');
   });
 
   if (menuToggle && nav) {
